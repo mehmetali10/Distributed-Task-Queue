@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taskqueue-deployment
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: taskqueue
+  template:
+    metadata:
+      labels:
+        app: taskqueue
+    spec:
+      containers:
+        - name: taskqueue
+          image: mehmetali10/taskqueue:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: PORT_TASKQUEUE_SERVICE
+              value: ":8080"
+            - name: DB_HOST
+              value: yourhost
+            - name: DB_PORT
+              value: yourport
+            - name: DB_USER
+              value: youruser
+            - name: DB_PASSWORD
+              value: yourpassword
+            - name: DB_DBNAME_SMSQUEUE
+              value: taskqueue
+            - name: JWT_SECRET_KEY
+              value: gokitIsAmazingTech
+
