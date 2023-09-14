@@ -1,2 +1,4 @@
-## System Design - Use case
-![image](https://github.com/mehmetali10/Dataguess/assets/77547122/897c7e42-abc7-4806-ae32-366934b658bc)
+## System Design & Use cases
+![image](https://github.com/mehmetali10/Distributed-Task-Queue/assets/77547122/5b213d42-32fb-4ba0-8731-828033edc534)
+
+
