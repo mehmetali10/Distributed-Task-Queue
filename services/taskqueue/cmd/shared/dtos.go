@@ -31,12 +31,12 @@ type (
 	ReadAllSmsQueueFailedRequest struct{}
 
 	SmsQueue struct {
-    Id          int         `json:"id"`
-    UserId      int         `json:"userId"`
-    PhoneNumber string      `json:"phoneNumber"`
-    SmsBody     string      `json:"smsBody"`
-    TryCount    int         `json:"tryCount"`
-    Status      string      `json:"status"`
-    CreatedDate *time.Time  `json:"createdDate"`
-}
+		Id          int        `json:"id"`
+		UserId      int        `json:"userId"`
+		PhoneNumber string     `json:"phoneNumber"`
+		SmsBody     string     `json:"smsBody"`
+		TryCount    int        `json:"tryCount"`
+		Status      string     `json:"status"`
+		CreatedDate *time.Time `json:"createdDate"`
+	}
 )
